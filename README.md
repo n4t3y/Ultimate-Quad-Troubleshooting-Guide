@@ -1,4 +1,4 @@
-## The Ultimate Quad Troubleshooting Procedure
+# The Ultimate Quad Troubleshooting Procedure
 
 This procedure is to guide you through troubleshooting your issue. Whether it be a receiver, VTX, ESC, Motor or any other issue, this procedure will guide you through the the stages you should be taking to try to solve it.
 Proper troubleshooting procedure should always be based on stages starting at the _simplest_ and often the most overlooked through to the most _complex_ and often the stage which most people jump to immediately. **90%** of issues will be resolved at the first two simplest stages - rarely do they require a complex solution - so it is important that you take the time initially to start at the simplest stage to potentially save time in the long run if you jump to the more complex stages.
@@ -6,6 +6,7 @@ Proper troubleshooting procedure should always be based on stages starting at th
 **Stage 1: _Check your physical build_**
 ---
 Most issues arise from these checks not being carried out thoroughly. You think you've soldered a wire to the correct pad but you haven't actually checked that it is correct. Go back and check it and double check it to make sure. Compare it to the wiring diagrams or installation instructions and fix it if you find it is wrong. Some examples are:
+
 **Power issues:**
 - something not powering up properly
 - no lights turning on
@@ -51,7 +52,7 @@ A few common issues to look out for:
     - under the CONFIGURATION tab, scroll down to the Other Features section and make sure the toggle button next to "GPS" is on, which should make the GPS tab show up
     - in the GPS tab make sure the Protocol is set to "UBLOX" (the most common protocol) and take your quad outside if possible to check for GPS satellite fixes (rarely GPS will work inside). If you aren't on a laptop, use telemetry on your radio to confirm whether your GPS is receiving satellites 
 - your motors are not operating when testing them in the motors tab (**with no props on of course!!**)
-    - 
+    - check the plugs on the ESC cable to make sure they are plugged in properly
 
 **Stage 3: _Check your Device versions_**
 ---
