@@ -7,25 +7,25 @@ Proper troubleshooting procedure should always be based on stages starting at th
 ---
 Most issues arise from these checks not being carried out thoroughly. You think you've soldered a wire to the correct pad but you haven't actually checked that it is correct. Go back and check it and double check it to make sure. Compare it to the wiring diagrams or installation instructions and fix it if you find it is wrong. Some examples are:
 **Power issues:**
-    - something not powering up properly
-    - no lights turning on
-    - no start up motor tones
+- something not powering up properly
+- no lights turning on
+- no start up motor tones
 **Signal issues:**
-    - controller stick movements not registering on the quad
-    - vtx not displaying OSD or changing channels correctly
-    - motor not turning or ESC not beeping on startup
+- controller stick movements not registering on the quad
+- vtx not displaying OSD or changing channels correctly
+- motor not turning or ESC not beeping on startup
 
 **_Things to check:_**
 **Power issues:**
-    - check that you're providing the correct voltage to the device (i.e. 9V vs 5V etc)
-    - check that the solder joint or plug is not loose
-    - check with a multimeter that you are receiving voltage at your device
+- check that you're providing the correct voltage to the device (i.e. 9V vs 5V etc)
+- check that the solder joint or plug is not loose
+- check with a multimeter that you are receiving voltage at your device
 
 **Signal Issues:**
-    - check that your Rx and Tx are connected to the correct pads (i.e. Tx (talk) on device goes to Rx (listen) on FC and vice versa)
-    - check that the solder joint or plug is not loose
-    - check that you are connecting to the intended UART (also part of Step 2)
-    - if there is a plug with a lot of wires connected, check they are in the correct order between FC and device (e.g. ESC cable)
+- check that your Rx and Tx are connected to the correct pads (i.e. Tx (talk) on device goes to Rx (listen) on FC and vice versa)
+- check that the solder joint or plug is not loose
+- check that you are connecting to the intended UART (also part of Step 2)
+- if there is a plug with a lot of wires connected, check they are in the correct order between FC and device (e.g. ESC cable)
 
 If you would like to have your install sanity checked, many people would be more than happy to help as long as there are clear photos and information on FC model and make as well as any other information which would help them check your stuff for you.
 
