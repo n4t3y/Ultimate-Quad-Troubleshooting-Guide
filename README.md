@@ -11,12 +11,14 @@ Most issues arise from these checks not being carried out thoroughly. You think 
 - something not powering up properly
 - no lights turning on
 - no start up motor tones
+
 **Signal issues:**
 - controller stick movements not registering on the quad
 - vtx not displaying OSD or changing channels correctly
 - motor not turning or ESC not beeping on startup
 
 **_Things to check:_**
+
 **Power issues:**
 - check that you're providing the correct voltage to the device (i.e. 9V vs 5V etc)
 - check that the solder joint or plug is not loose
@@ -61,7 +63,9 @@ At this point of troubleshooting it is hard to provide generic advice because of
 This would be the first stage at which you may need to flash firmware to anything. Often, if there are issues with devices not working after you've been through the previous troubleshooting stages, it is something to do with the firmware of the device (note that it is almost never an issue with the FC firmware unless there is a lack of a certain feature that the device requires of the FC which is only fixed by a newer FC firmware version). Devices such as ELRS receivers, Walksnail VTXs and DJI VTXs often need to have matching firmware to the transmitter or goggles to work properly and so this is what should be checked.
 
 For a detailed procedure for flashing firmware to ELRS devices, there is great information found here: https://www.expresslrs.org/
+
 For a detailed procedure for flashing firmware to Walksnail devices, there is great information found here: https://walksnail.wiki/ and https://oscarliang.com/setup-avatar-fpv-system/
+
 For a detailed procedure for flashing firmware to Walksnail devices, there is great information found here: https://oscarliang.com/dji-fpv-system-update-firmware/
 
 **Stage 4: _Still having an issue after all these steps?_**
