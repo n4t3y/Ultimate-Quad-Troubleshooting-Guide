@@ -17,6 +17,10 @@ Most issues arise from these checks not being carried out thoroughly. You think 
 - vtx not displaying OSD or changing channels correctly
 - motor not turning or ESC not beeping on startup
 
+**Flight issues:**
+- quad flips before taking off
+- motors spin but quad does not takeoff on arming
+
 **_Things to check:_**
 
 **Power issues:**
@@ -29,6 +33,11 @@ Most issues arise from these checks not being carried out thoroughly. You think 
 - check that the solder joint or plug is not loose
 - check that you are connecting to the intended UART (also part of Step 2)
 - if there is a plug with a lot of wires connected, check they are in the correct order between FC and device (e.g. ESC cable)
+
+**Flight issues:**
+- check that your props are on tightly and are the correct direction (i.e. matching the motor direction - high side of the blade is moving in the direction the motor is turning)
+- check that the motors are spinning the correct direction to match what betaflight is expecting (i.e. "props in" or "props out"). Note that to check what betaflight is expecting, you will need to connect to a computer and you should **_always remove your propellers_** (refer to Stage 2 for more information)
+- check that the flight controller is installed in the correct orientation (i.e. find the arrow on the top of the FC and make sure it is poiting to the front where your camera is)
 
 If you would like to have your install sanity checked, many people would be more than happy to help as long as there are clear photos and information on FC model and make as well as any other information which would help them check your stuff for you.
 
@@ -54,7 +63,13 @@ A few common issues to look out for:
     - under the CONFIGURATION tab, scroll down to the Other Features section and make sure the toggle button next to "GPS" is on, which should make the GPS tab show up
     - in the GPS tab make sure the Protocol is set to "UBLOX" (the most common protocol) and take your quad outside if possible to check for GPS satellite fixes (rarely GPS will work inside). If you aren't on a laptop, use telemetry on your radio to confirm whether your GPS is receiving satellites 
 - your motors are not operating when testing them in the motors tab (**with no props on of course!!**)
-    - check the plugs on the ESC cable to make sure they are plugged in properly
+    - check the ESC protocol in the MOTORS tab is set correctly (i.e. usually DSHOT300 is more than enough)
+    - if your ESC does not support RPM filtering (i.e. running BLHELI-S), bidirectional DSHOT should be OFF
+    - if your ESC does support RPM filtering (i.e. running BLHELI32, AM32 or Bluejay), bidirectional DSHOT can be ON but does not need to be
+- your quad flips before taking off or does not take off at all
+    - in the MOTORS tab in betaflight, the direction that the motors spin and the motor order needs to match the image in the top left hand side. You can choose to "reverse" the motor direction and tell betaflight that they are reversed by toggling the "Motor direction is reversed" toggle to on.
+    - run the motor direction wizard to check and change the motor order and direction if required ensuring **_your propellers are removed_**.
+    - if you cannot orient the flight controller so the arrow is pointing forward or have chosen a different orientation you need to tell it what the orientation is in the CONFIGURATION tab under the "Board and Sensor Alignment" section.
 
 **Stage 3: _Check your Device versions_**
 ---
