@@ -1,11 +1,11 @@
 # The Ultimate Quad Troubleshooting Procedure
 
 This procedure is to guide you through troubleshooting your issue. Whether it be a receiver, VTX, ESC, Motor or any other issue, this procedure will guide you through the the stages you should be taking to try to solve it.
-Proper troubleshooting procedure should always be based on stages starting at the _simplest_ and often the most overlooked through to the most _complex_ and often the stage which most people jump to immediately. **90%** of issues will be resolved at the first two simplest stages - rarely do they require a complex solution - so it is important that you take the time initially to start at the simplest stage to potentially save time in the long run if you jump to the more complex stages.
+Proper troubleshooting procedure should always be based on stages starting at the _simplest_ and often the most overlooked through to the most _complex_ and often the stage which most people jump to immediately. **90%** of issues will be resolved at the first two simplest stages - rarely do they require a complex solution - so it is important that you take the time initially to start at the simplest stage to potentially save time in the long run compared to if you immediately jump to the more complex stages.
 
 **Stage 1: _Check your physical build_**
 ---
-Most issues arise from these checks not being carried out thoroughly. You think you've soldered a wire to the correct pad but you haven't actually checked that it is correct. Go back and check it and double check it to make sure. Compare it to the wiring diagrams or installation instructions and fix it if you find it is wrong. Some examples are:
+Most issues arise from these checks not being carried out thoroughly. You think you've soldered a wire to the correct pad but you haven't actually checked that it is correct. Go back and check it and double check it. Compare it to the wiring diagrams or installation instructions and fix it if you find it is wrong. Some examples are:
 
 **Power issues:**
 - something not powering up properly
@@ -39,13 +39,13 @@ Most issues arise from these checks not being carried out thoroughly. You think 
 - check that the motors are spinning the correct direction to match what betaflight is expecting (i.e. "props in" or "props out"). Note that to check what betaflight is expecting, you will need to connect to a computer and you should **_always remove your propellers_** (refer to Stage 2 for more information)
 - check that the flight controller is installed in the correct orientation (i.e. find the arrow on the top of the FC and make sure it is poiting to the front where your camera is)
 
-If you would like to have your install sanity checked, many people would be more than happy to help as long as there are clear photos and information on FC model and make as well as any other information which would help them check your stuff for you.
+If you would like to have your install sanity checked, many people would be more than happy to help as long as there are clear photos and information on FC model and make as well as any other information for your device or anything else you think would help them check your stuff for you.
 
-Remember - this might be annoying because you have finished putting everything together and you need to pull it apart to check these things, but you should ask yourself if you would rather spend a few minutes undoing screws and moving things out of the way to check these simple things and have a solution at the end of the day or spend hours trying to solve a complex issue which doesn't end in a solution until you pull it apart and check your build, only to see that it was a simple install issue all along and you've wasted hours trying other things.
+Remember - this might be annoying because you have finished putting everything together and you need to pull it apart to check these things, but you should ask yourself if you would rather spend a few minutes undoing screws and moving things out of the way to check these simple things and have a solution at the end of the day, or spend hours trying to solve a complex issue which doesn't end in a solution until you pull it apart and check your build. When you see that it was a simple install issue all along, you'll realise that you've wasted hours trying other things.
 
 **Stage 2: _Check your FC config_**
 ---
-Once you have checked over your wiring and general installation and the issue has not been resolved, this is the time to connect your FC to your computer and use your configurator of choice (Betaflight, INAV etc). This is the stage where you check that the configuration of the FC matches what you have connected to it, whether this is:
+Once you have checked over your wiring and general installation and the issue has still not been resolved, this is the time to connect your FC to your computer and use your configurator of choice (Betaflight, INAV etc). This is the stage where you check that the configuration of the FC matches what you have connected to it, whether this is:
 - checking that you've got the correct settings on the correct UART in your ports tab
 - checking that the correct receiver protocol is selected in the receiver tab
 - checking that your ESC protocol matches your ESC (i.e. DSHOT or bidirectional DSHOT etc) in the motors tab
@@ -70,6 +70,7 @@ A few common issues to look out for:
     - in the MOTORS tab in betaflight, the direction that the motors spin and the motor order needs to match the image in the top left hand side. You can choose to "reverse" the motor direction and tell betaflight that they are reversed by toggling the "Motor direction is reversed" toggle to on.
     - run the motor direction wizard to check and change the motor order and direction if required ensuring **_your propellers are removed_**.
     - if you cannot orient the flight controller so the arrow is pointing forward or have chosen a different orientation you need to tell it what the orientation is in the CONFIGURATION tab under the "Board and Sensor Alignment" section.
+    - if you are on INAV, in the OUTPUTS tab, you need to enable the outputs through a toggle at the top of the page that needs to be on
 
 **Stage 3: _Check your Device versions_**
 ---
